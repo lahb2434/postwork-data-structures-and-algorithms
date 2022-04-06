@@ -1,7 +1,7 @@
 def reverse_string(str)
   splitString = str.split('')
   reverseString = ''
-  splitstring.each{|element| reverseString.prepend(element)}
+  splitString.each{|element| reverseString.prepend(element)}
   reverseString
 end
 
@@ -15,6 +15,9 @@ if __FILE__ == $PROGRAM_NAME
   puts "=>", reverse_string('catbaby')
 
   # Don't forget to add your own!
+  puts "Expecting: 'repmac yppah'"
+  puts "=>", reverse_string('happy camper')
+
 end
 
 # psuedocode:
