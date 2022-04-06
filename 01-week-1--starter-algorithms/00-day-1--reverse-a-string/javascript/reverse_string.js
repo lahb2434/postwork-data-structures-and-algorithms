@@ -1,5 +1,8 @@
 function reverseString(str) {
-  changethings in here
+  const splitString = str.split('');
+  let reverseString = '';
+  splitString.forEach(element => reverseString = element + reverseString);
+  return reverseString
 }
 
 if (require.main === module) {
@@ -15,9 +18,23 @@ if (require.main === module) {
 
 module.exports = reverseString;
 
+//psuedocode:
 
-// splitString = [s t r i n g]
-// create new empty array newArray = []
-// iterate over splitString and take index of element
-// add element to newArray at the negative index of splitString element
+// function reverseString(str) 
+//   split String
+//   create empty String
+//   iterate over split string 
+//   add element to beginning of empty string creating reverse string
+//   return reverse string
+// done
+
+//explanation:
+
+// I split the string to be able to work on each element of string
+// I then iterate on the split string which is now an Array and add each element
+// to the beginning of an empty string 
+// by doing so creating a reverse string
+
+
+
 
