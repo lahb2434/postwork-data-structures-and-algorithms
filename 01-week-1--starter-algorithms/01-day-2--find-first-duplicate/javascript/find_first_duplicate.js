@@ -15,13 +15,14 @@ if (require.main === module) {
 
 module.exports = findFirstDuplicate;
 
-// Please add your pseudocode to this file
+//pseudocode:
 // function findFirstDuplicate
 //   duplicate Array
-//   iterate over first array comparing both for duplicates
-//   if duplicate is found
-//   assign duplicate to const
-//   return const
+//   iterate over first array 
+//   nest second iteration of second Array
+//   if first array element is equal to second array element
+//   stop iteration 
+//   return duplicated element
 // done
 
 
