@@ -1,5 +1,5 @@
 function reverseString(str) {
-  // type your code here
+  changethings in here
 }
 
 if (require.main === module) {
@@ -15,5 +15,9 @@ if (require.main === module) {
 
 module.exports = reverseString;
 
-// Please add your pseudocode to this file
-// And a written explanation of your solution
+
+// splitString = [s t r i n g]
+// create new empty array newArray = []
+// iterate over splitString and take index of element
+// add element to newArray at the negative index of splitString element
+
