@@ -1,5 +1,8 @@
 def reverse_string(str)
-  # type your code in here
+  splitString = str.split('')
+  reverseString = ''
+  splitstring.each{|element| reverseString.prepend(element)}
+  reverseString
 end
 
 if __FILE__ == $PROGRAM_NAME
@@ -14,5 +17,19 @@ if __FILE__ == $PROGRAM_NAME
   # Don't forget to add your own!
 end
 
-# Please add your pseudocode to this file
-# And a written explanation of your solution
+# psuedocode:
+
+# reversestring(arg)
+#  create a split string from arg = [a r g]
+#  create and empty string = ''
+#  iterate over split string and prepend each element to empty string creating reverse string
+#  return reverse string
+# end
+
+# Description:
+
+# In this example I am breaking apart the string so I can work on each element of the string individually
+# I then prepend each element to the new string
+# another way to do this is create a new array and append each element to the new array then join array together
+# I am curious which is more readable and faster
+# then return the string
