@@ -1,6 +1,5 @@
 def find_first_duplicate(arr)
   arr2 = []
-  
   duplicate = arr.each do |x|
     if  arr2.include?(x)
       return x;
@@ -38,4 +37,22 @@ if __FILE__ == $PROGRAM_NAME
 end
 
 # Please add your pseudocode to this file
+# 
+# find_first_duplicate(arr)
+#   create new empty array 
+#   iterate over arr 
+#   if new array includes element 
+#     return element
+#   if not add element to new array
+#   if no duplicates are found return -1
+# done
+
+
 # And a written explanation of your solution
+# 
+# I begin by creating an empty array, then I iterate over argument array
+# if the element the iterator is working on is included in the new array
+# then I want the method to return the element. If the element isnt included
+# in the new array then push that element to the new array and continue iterating
+# over the rest of the elements until either a duplicate is found or if not return 
+# the value of -1
