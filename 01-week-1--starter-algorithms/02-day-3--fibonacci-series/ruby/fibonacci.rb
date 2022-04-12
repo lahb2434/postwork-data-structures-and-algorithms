@@ -1,5 +1,5 @@
-def fibonacci(num)
-  # type your code in here
+const fibonacci = (num) =>
+  (((((1+(5**0.5))/2)**num)-(((1-(5**0.5))/2)**num))/(5**0.5)).to_i 
 end
 
 if __FILE__ == $PROGRAM_NAME
@@ -15,9 +15,32 @@ if __FILE__ == $PROGRAM_NAME
 
   puts "Expecting: 55"
   puts "=>", fibonacci(10)
+  
 
   # Don't forget to add your own!
+
+  puts "Expecting: 1597"
+  puts "=>", fibonacci(17)
+
+  puts
+
+  puts "Expecting: 46368"
+  puts "=>", fibonacci(24)
+
+  puts
 end
 
-# Please add your pseudocode to this file
+# Please add your pseudocode to this file 
+# 
+# def fibonacci
+#   add argument to binet's formula
+#   convert results to integer
+# done
+
 # And a written explanation of your solution
+# 
+# I first researched fibonacci as I hadn't used it since highschool, 
+# after researching I researced a formula that calcutates the exact
+# number of each fibonacci sequence number based on position, I found
+# Binet's formula for calculating finbonacci sequence numbers. I then 
+# plugged that in and tested it to see results.
