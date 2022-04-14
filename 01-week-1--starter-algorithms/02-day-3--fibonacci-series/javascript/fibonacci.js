@@ -1,18 +1,18 @@
-// const fibonacci = (num) => parseInt((((((1+(5**0.5))/2)**num)-(((1-(5**0.5))/2)**num))/(5**0.5)))
+const fibonacci = (num) => parseInt((((((1+(5**0.5))/2)**num)-(((1-(5**0.5))/2)**num))/(5**0.5)))
 
-function fibonacci(num){
-  let sum = 0
-  let x = 0
-  let y = 1
-  if (num < 2) return num;
+// function fibonacci(num){
+//   let sum = 0
+//   let x = 0
+//   let y = 1
+//   if (num < 2) return num;
 
-  for(let i = 0; i < num; i++){
-    sum = x + y
-    y = x
-    x = sum
-  }
-  return sum
-}
+//   for(let i = 0; i < num; i++){
+//     sum = x + y
+//     y = x
+//     x = sum
+//   }
+//   return sum
+// }
 if (require.main === module) {
   // add your own tests in here
   console.log("Expecting: 0");
