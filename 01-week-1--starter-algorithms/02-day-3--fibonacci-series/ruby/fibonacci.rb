@@ -66,3 +66,22 @@ end
 # number of each fibonacci sequence number based on position, I found
 # Binet's formula for calculating finbonacci sequence numbers. I then 
 # plugged that in and tested it to see results.
+
+
+# Benchmark.bm do |benchmark|
+#   benchmark.report("Array(0..10)") do
+#     1_000_000.times do 
+#       Array(0..10)
+#     end
+#   end
+#   benchmark.report("a=*(1..10)") do
+#     1_000_000.times do 
+#       a=*(1..10)
+#     end
+#   end
+#   benchmark.report("(0..10).to_a") do
+#     1_000_000.times do 
+#       (0..10).to_a
+#     end
+#   end
+# end

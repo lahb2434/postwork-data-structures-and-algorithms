@@ -1,5 +1,9 @@
-function fibonacci(n) {
-  // type your code here
+function fibonacci(n, memo = {}) {
+  if(n in memo) return memo[n];
+  if(n < 2) return n;
+
+  memo[n] = fibonacci(n - 1, memo) + fibonacci(n - 2, memo)
+  return memo[n]
 }
 
 if (require.main === module) {
@@ -16,6 +20,11 @@ if (require.main === module) {
 
   console.log("Expecting: 55");
   console.log("=>", fibonacci(10));
+
+  console.log("");
+
+  console.log("Expecting: ");
+  console.log("=>", fibonacci(88));
 }
 
 module.exports = fibonacci;
